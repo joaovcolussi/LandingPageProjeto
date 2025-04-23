@@ -1,0 +1,61 @@
+/* Manter as diretivas do Tailwind no topo */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Componentes personalizados */
+@layer components {
+  .nav-main {
+    @apply bg-gray-800 text-white sticky top-0 z-50 shadow-lg;
+  }
+
+  .nav-main a {
+    @apply flex items-center; /* Alterado de baseline para center */
+    gap: 0.75rem; /* Adicionado espaçamento consistente */
+  }
+
+  .section-main {
+    @apply py-16 px-4; /* Adicionado padding horizontal */
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-8 text-center;
+  }
+
+  .section-divider {
+    @apply h-1 bg-gray-300 w-24 mx-auto mb-8;
+  }
+
+  .member-card {
+    @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all;
+    min-height: 380px; /* Garante altura mínima */
+  }
+
+  .member-image {
+    @apply w-32 h-32 rounded-full mx-auto mb-6 object-cover 
+           border-4 border-blue-100 shadow-sm;
+  }
+
+  .footer-main {
+    @apply bg-gray-800 text-white py-8 mt-20; /* Adicionado margin-top */
+  }
+
+  /* Ajustes de responsividade */
+  @media (min-width: 768px) {
+    .nav-main a {
+      gap: 1.5rem; /* Aumenta espaçamento em desktop */
+    }
+    
+    .member-card {
+      min-height: 420px; /* Ajuste para telas maiores */
+    }
+
+  .member-image {
+    @apply w-40 h-40 rounded-full mx-auto mb-6 object-cover;
+    @apply border-4 border-main-blue/20 shadow-lg aspect-square;
+  }
+
+  .footer-main {
+    @apply bg-gray-800 text-white py-8;
+  }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitShop</title>
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Menu de Navegação -->
+    <nav class="nav-main">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo + Nome -->
+                <a href="#home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <img src="./imgs/FitShop.png" 
+                         alt="FitShop" 
+                         class="h-14 w-14 p-2 bg-white rounded-lg shadow-md">
+                    <div class="flex flex-col">
+                        <span class="text-white font-bold text-xl tracking-tight">FitShop</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#disciplina" class="text-white/80 hover:text-white transition-colors font-medium">Disciplina</a>
+                    <a href="#empresa" class="text-white/80 hover:text-white transition-colors font-medium">Empresa</a>
+                    <a href="#projeto" class="text-white/80 hover:text-white transition-colors font-medium">Projeto</a>
+                    <a href="#membros" class="text-white/80 hover:text-white transition-colors font-medium">Membros</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seções de Conteúdo -->
+    <main class="pb-20">
+        <!-- Seção Disciplina -->
+        <section id="disciplina" class="section-main py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="section-title">Sobre a Disciplina</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    A disciplina de Desenvolvimento de E-Commerce aborda os principais conceitos e tecnologias 
+                    envolvidas na criação de plataformas de comércio eletrônico. Estudo de casos reais, 
+                    arquitetura de sistemas, segurança de pagamentos e experiência do usuário.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Empresa -->
+        <section id="empresa" class="section-main py-16">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="section-title">Nossa Empresa</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Somos a FitShop, uma startup especializada em soluções inovadoras para e-commerce fitness. 
+                    Nosso foco é desenvolver plataformas escaláveis com inteligência artificial para 
+                    personalização de experiência do cliente e otimização de vendas.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Projeto -->
+        <section id="projeto" class="section-main py-16 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="section-title">Tema do Projeto</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Desenvolvimento de uma plataforma de e-commerce integrada com realidade aumentada para 
+                    visualização de produtos fitness em 3D. O sistema incluirá recomendações personalizadas usando 
+                    machine learning e integração com principais gateways de pagamento.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Membros -->
+        <section id="membros" class="section-main py-16">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="section-title">Nossa Equipe</h2>
+                <div class="section-divider"></div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- Membro 1 -->
+                    <div class="member-card">
+                        <img src="./imgs/joaovictor.jpg" 
+                             class="member-image"
+                             alt="João Victor">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">João Victor</h3>
+                        <p class="text-gray-600 text-center font-medium">Desenvolvedor Full-Stack</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável pelo desenvolvimento da landing page e integrações backend.
+                        </p>
+                    </div>
+
+                    <!-- Outros membros mantêm mesma estrutura -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-white/80">&copy; 2025 FitShop. Todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
