@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitShop</title>
     <link rel="stylesheet" href="./styles/output.css">
+    <link rel="icon" href="./imgs/FitShop.png" type="image/png">
 </head>
 <body class="bg-gray-50">
-    <!-- Menu de Navegação -->
     <nav class="nav-main">
         <div class="container mx-auto px-6">
             <div class="flex items-center justify-between py-4">
-                <!-- Logo + Nome -->
                 <a href="#home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
                     <img src="./imgs/FitShop.png" 
                          alt="FitShop" 
@@ -22,16 +21,17 @@
                 </a>
 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#disciplina" class="text-white/80 hover:text-white transition-colors font-medium">Disciplina</a>
-                    <a href="#empresa" class="text-white/80 hover:text-white transition-colors font-medium">Empresa</a>
-                    <a href="#projeto" class="text-white/80 hover:text-white transition-colors font-medium">Projeto</a>
-                    <a href="#membros" class="text-white/80 hover:text-white transition-colors font-medium">Membros</a>
+                    <div class="links">
+                        <a href="#disciplina" class="text-white/80 hover:text-white transition-colors font-medium">Disciplina</a>
+                        <a href="#empresa" class="text-white/80 hover:text-white transition-colors font-medium">Empresa</a>
+                        <a href="#projeto" class="text-white/80 hover:text-white transition-colors font-medium">Projeto</a>
+                        <a href="#membros" class="text-white/80 hover:text-white transition-colors font-medium">Membros</a>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Seções de Conteúdo -->
     <main class="pb-20">
         <!-- Seção Disciplina -->
         <section id="disciplina" class="section-main py-16 bg-white">
@@ -39,9 +39,8 @@
                 <h2 class="section-title">Sobre a Disciplina</h2>
                 <div class="section-divider"></div>
                 <p class="text-gray-700 leading-relaxed text-lg">
-                    A disciplina de Desenvolvimento de E-Commerce aborda os principais conceitos e tecnologias 
-                    envolvidas na criação de plataformas de comércio eletrônico. Estudo de casos reais, 
-                    arquitetura de sistemas, segurança de pagamentos e experiência do usuário.
+                    A disciplina de Fábrica de Projetos no E-Commerce vai ser utilizado as seguintes tecnologias,wireframe através do Figma,
+                    HTML, CSS E JAVASCRIPT como linguagens de front-end. Para back-end vamos utilizaremos C#.
                 </p>
             </div>
         </section>
@@ -53,8 +52,7 @@
                 <div class="section-divider"></div>
                 <p class="text-gray-700 leading-relaxed text-lg">
                     Somos a FitShop, uma startup especializada em soluções inovadoras para e-commerce fitness. 
-                    Nosso foco é desenvolver plataformas escaláveis com inteligência artificial para 
-                    personalização de experiência do cliente e otimização de vendas.
+                    Nosso foco é desenvolver um site de e-commerce com os produtos da API do Breda's chamado VendaSimples.
                 </p>
             </div>
         </section>
@@ -65,21 +63,17 @@
                 <h2 class="section-title">Tema do Projeto</h2>
                 <div class="section-divider"></div>
                 <p class="text-gray-700 leading-relaxed text-lg">
-                    Desenvolvimento de uma plataforma de e-commerce integrada com realidade aumentada para 
-                    visualização de produtos fitness em 3D. O sistema incluirá recomendações personalizadas usando 
-                    machine learning e integração com principais gateways de pagamento.
+                    Desenvolvimento de uma plataforma de e-commerce integrada com a API do Breda's, utilizando oque já vimos em aula
+                    e com oque estamos aprendendo no momento.
                 </p>
             </div>
         </section>
 
-        <!-- Seção Membros -->
         <section id="membros" class="section-main py-16">
             <div class="container mx-auto px-6 max-w-6xl">
                 <h2 class="section-title">Nossa Equipe</h2>
-                <div class="section-divider"></div>
-                
+                <div class="section-divider"></div>  
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                    <!-- Membro 1 -->
                     <div class="member-card">
                         <img src="./imgs/joaovictor.jpg" 
                              class="member-image"
@@ -90,14 +84,57 @@
                             Responsável pelo desenvolvimento da landing page e integrações backend.
                         </p>
                     </div>
-
+                    <div class="member-card">
+                        <img src="./imgs/cristhianheber.jpeg"
+                            class="member-image" alt="Silvio Alex">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">Cristhian Heber</h3>
+                        <p class="text-gray-600 text-center font-medium">Desenvolvedor Web</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável pelo estruturamento do layout da landing page.
+                        </p>
+                    </div>
+                    <div class="member-card">
+                        <img src="./imgs/silvioalex.jng.jpg"
+                            class="member-image" alt="Silvio Alex">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">Silvio Alex</h3>
+                        <p class="text-gray-600 text-center font-medium">Organização e gestão</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável pela organização e gerenciar tarefas, estoque e pedidos.
+                        </p>
+                    </div>
+                    <div class="member-card">
+                        <img src="./imgs/Alexandre.jpg"
+                            class="member-image" alt="Silvio Alex">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">Alexandre José Gomes</h3>
+                        <p class="text-gray-600 text-center font-medium">Desenvolvedor Front-end</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável pelo front-end e desenvolvimento do projeto.
+                        </p>
+                    </div>
+                    <div class="member-card">
+                        <img src="./imgs/miguel.jpg"
+                            class="member-image" alt="Miguel">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">Miguel Ramos Pires</h3>
+                        <p class="text-gray-600 text-center font-medium">Desenvolvedor Back-end</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável pelo Back-end e auxiliar o desenvolvimento do projeto.
+                        </p>
+                    </div>
+                    <div class="member-card">
+                        <img src="./imgs/viniicius.jpg"
+                            class="member-image" alt="vinicius">
+                        <h3 class="text-xl font-bold text-center mb-2 mt-4">Vinicius Press</h3>
+                        <p class="text-gray-600 text-center font-medium">Analista web</p>
+                        <p class="text-gray-500 text-sm mt-2 text-center px-4">
+                            Responsável por analisar o andamento do projeto e propor melhorias.
+                        </p>
+                    </div>
                     <!-- Outros membros mantêm mesma estrutura -->
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer-main">
         <div class="container mx-auto px-6 py-8 text-center">
             <p class="text-white/80">&copy; 2025 FitShop. Todos os direitos reservados</p>
